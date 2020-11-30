@@ -1,0 +1,45 @@
+work_dir: ./work_dir/ntu/xview/agcn_joint_tl
+model_saved_name: ./runs/ntu_cv_agcn_joint_tl
+# feeder
+feeder: feeders.feeder.Feeder
+train_feeder_args:
+  data_path: ./data/ShakeFiveP2_tl/xview/train_data_joint.npy
+  label_path: ./data/ShakeFiveP2_tl/xview/train_label.pkl
+  debug: False
+  random_choose: False
+  random_shift: False
+  random_move: False
+  window_size: -1
+  normalization: False
+
+test_feeder_args:
+  data_path: ./data/ShakeFiveP2_tl/xview/val_data_joint.npy
+  label_path: ./data/ShakeFiveP2_tl/xview/val_label.pkl
+
+# model
+model: model.p2agcn.Model
+model_args:
+  num_class: 16 #11
+  num_point: 25
+  num_person: 2
+  graph: graph.ntu_rgb_d.Graph
+  graph_args:
+    labeling_mode: 'spatial'
+    num_node: 50
+
+#optim
+weight_decay: 0.0001
+base_lr: 0.1
+step: [280, 290]
+
+# training
+device: [0]
+batch_size: 4
+test_batch_size: 4
+num_epoch: 300
+nesterov: True
+
+############################################
+#weights
+weights: ./runs/ntu_cv_agcn_joint_tl-199-3250.pt
+start_epoch: 200
