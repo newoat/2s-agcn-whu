@@ -1,0 +1,4 @@
+[ Fri Oct 23 19:01:47 2020 ] Load weights from ./runs/SF_p2agcn_joint-199-3500.pt.
+[ Fri Oct 23 19:01:47 2020 ] using warm up, epoch: 0
+[ Fri Oct 23 19:02:13 2020 ] Load weights from ./runs/SF_p2agcn_joint-199-3500.pt.
+[ Fri Oct 23 19:02:13 2020 ] using warm up, epoch: 0

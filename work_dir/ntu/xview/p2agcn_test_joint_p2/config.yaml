@@ -1,0 +1,51 @@
+base_lr: 0.01
+batch_size: 256
+config: ./config/nturgbd-cross-view/test_joint_p2.yaml
+device:
+- 0
+eval_interval: 5
+feeder: feeders.feeder.Feeder
+ignore_weights: []
+log_interval: 100
+model: model.p2agcn.Model
+model_args:
+  graph: graph.ntu_rgb_d.Graph
+  graph_args:
+    labeling_mode: spatial
+    num_node: 50
+  num_class: 11
+  num_person: 2
+  num_point: 25
+model_saved_name: ./runs/ntu_cv_p2agcn_test_joint_p2
+nesterov: false
+num_epoch: 80
+num_worker: 0
+only_train_epoch: 0
+only_train_part: false
+optimizer: SGD
+phase: test
+printA: false
+print_log: true
+save_interval: 2
+save_score: true
+seed: 1
+show_topk:
+- 1
+- 5
+- 11
+start_epoch: 0
+step:
+- 20
+- 40
+- 60
+test_batch_size: 64
+test_feeder_args:
+  data_path: ./data/ntu_p2/xview/val_data_joint.npy
+  debug: false
+  label_path: ./data/ntu_p2/xview/val_label.pkl
+train_feeder_args: {}
+transfer_learning: false
+warm_up_epoch: 0
+weight_decay: 0.0005
+weights: ./runs/ntu_cv_p2agcn_joint-49-26691.pt
+work_dir: ./work_dir/ntu/xview/p2agcn_test_joint_p2

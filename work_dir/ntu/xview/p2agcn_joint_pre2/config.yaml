@@ -1,0 +1,56 @@
+base_lr: 0.1
+batch_size: 4
+config: ./config/nturgbd-cross-view/train_joint_p2_pre2.yaml
+device:
+- 0
+eval_interval: 5
+feeder: feeders.feeder.Feeder
+ignore_weights: []
+log_interval: 100
+model: model.p2agcn.Model
+model_args:
+  graph: graph.ntu_rgb_d.Graph
+  graph_args:
+    labeling_mode: spatial
+    num_node: 50
+  num_class: 11
+  num_person: 2
+  num_point: 25
+model_saved_name: ./runs/ntu_cv_p2agcn_joint_pre2
+nesterov: true
+num_epoch: 50
+num_worker: 0
+only_train_epoch: 0
+only_train_part: false
+optimizer: SGD
+phase: train
+printA: false
+print_log: true
+save_interval: 2
+save_score: false
+seed: 1
+show_topk:
+- 1
+- 5
+- 11
+start_epoch: 0
+step:
+- 30
+- 40
+test_batch_size: 4
+test_feeder_args:
+  data_path: ./data/ntu_pre2/xview/val_data_joint.npy
+  label_path: ./data/ntu_pre2/xview/val_label.pkl
+train_feeder_args:
+  data_path: ./data/ntu_pre2/xview/train_data_joint.npy
+  debug: false
+  label_path: ./data/ntu_pre2/xview/train_label.pkl
+  normalization: false
+  random_choose: false
+  random_move: false
+  random_shift: false
+  window_size: -1
+warm_up_epoch: 0
+weight_decay: 0.0001
+weights: null
+work_dir: ./work_dir/ntu/xview/p2agcn_joint_pre2

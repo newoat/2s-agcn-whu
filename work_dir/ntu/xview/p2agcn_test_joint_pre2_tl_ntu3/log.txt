@@ -1,0 +1,17 @@
+[ Sun Nov  1 22:21:13 2020 ] Load weights from ./runs/ntu_cv_agcn_joint_tl-51-130.pt.
+[ Sun Nov  1 22:21:54 2020 ] Load weights from ./runs/ntu_cv_agcn_joint_tl-51-377.pt.
+[ Sun Nov  1 22:21:54 2020 ] using warm up, epoch: 0
+[ Sun Nov  1 22:24:22 2020 ] Load weights from ./runs/ntu_cv_p2agcn_joint_pre2-49-20800.pt.
+[ Sun Nov  1 22:24:35 2020 ] Load weights from ./runs/ntu_cv_p2agcn_joint_pre2-49-20800.pt.
+[ Sun Nov  1 22:24:35 2020 ] using warm up, epoch: 0
+[ Sun Nov  1 22:29:38 2020 ] Load weights from ./runs/ntu_cv_p2agcn_joint_pre2-49-20800.pt.
+[ Sun Nov  1 22:29:38 2020 ] using warm up, epoch: 0
+[ Sun Nov  1 22:30:38 2020 ] Load weights from ./runs/ntu_cv_agcn_joint_tl-99-1625.pt.
+[ Sun Nov  1 22:32:19 2020 ] Load weights from ./runs/ntu_cv_agcn_joint_tl-99-1625.pt.
+[ Sun Nov  1 22:32:19 2020 ] using warm up, epoch: 0
+[ Sun Nov  1 22:33:14 2020 ] Load weights from ./runs/ntu_cv_agcn_joint_tl-59-585.pt.
+[ Sun Nov  1 22:33:14 2020 ] using warm up, epoch: 0
+[ Sun Nov  1 22:38:12 2020 ] Load weights from ./runs/ntu_cv_p2agcn_joint_pre2-49-20800.pt.
+[ Sun Nov  1 22:38:13 2020 ] using warm up, epoch: 0
+[ Sun Nov  1 22:42:00 2020 ] Load weights from ./runs/ntu_cv_agcn_joint_tl-51-377.pt.
+[ Sun Nov  1 22:42:00 2020 ] using warm up, epoch: 0

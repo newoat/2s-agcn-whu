@@ -1,0 +1,6 @@
+[ Fri Nov  6 21:48:44 2020 ] Load weights from ./runs/ntu_cv_p2agcn_bone-49-20800.pt.
+[ Fri Nov  6 21:48:44 2020 ] using warm up, epoch: 0
+[ Fri Nov  6 21:51:17 2020 ] Load weights from ./runs/ntu_cv_p2agcn_bone-49-20800.pt.
+[ Fri Nov  6 21:51:18 2020 ] using warm up, epoch: 0
+[ Fri Nov  6 21:52:11 2020 ] Load weights from ./runs/ntu_cv_p2agcn_bone-49-20800.pt.
+[ Fri Nov  6 21:52:11 2020 ] using warm up, epoch: 0

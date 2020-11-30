@@ -1,0 +1,447 @@
+[ Wed Oct  7 15:07:36 2020 ] using warm up, epoch: 0
+[ Wed Oct  7 15:07:36 2020 ] Parameters:
+{'work_dir': './work_dir/ntu/xview/p2agcn_joint', 'model_saved_name': './runs/ntu_cv_p2agcn_joint', 'config': './config/nturgbd-cross-view/train_joint_p2.yaml', 'phase': 'train', 'save_score': False, 'seed': 1, 'log_interval': 100, 'save_interval': 2, 'eval_interval': 5, 'print_log': True, 'show_topk': [1, 5, 11], 'feeder': 'feeders.feeder.Feeder', 'num_worker': 0, 'train_feeder_args': {'data_path': './data/ntu/xview/train_data_joint.npy', 'label_path': './data/ntu/xview/train_label.pkl', 'debug': False, 'random_choose': False, 'random_shift': False, 'random_move': False, 'window_size': -1, 'normalization': False}, 'test_feeder_args': {'data_path': './data/ntu/xview/val_data_joint.npy', 'label_path': './data/ntu/xview/val_label.pkl'}, 'model': 'model.agcn.Model', 'model_args': {'num_class': 11, 'num_point': 25, 'num_person': 2, 'graph': 'graph.ntu_rgb_d.Graph', 'graph_args': {'labeling_mode': 'spatial', 'num_node': 50}}, 'weights': None, 'ignore_weights': [], 'base_lr': 0.1, 'step': [30, 40], 'device': [0], 'optimizer': 'SGD', 'nesterov': True, 'batch_size': 4, 'test_batch_size': 4, 'start_epoch': 0, 'num_epoch': 2, 'weight_decay': 0.0001, 'only_train_part': False, 'only_train_epoch': 0, 'warm_up_epoch': 0, 'printA': False}
+
+[ Wed Oct  7 15:07:36 2020 ] Training epoch: 1
+[ Wed Oct  7 15:27:53 2020 ] 	Mean training loss: 2.4648.
+[ Wed Oct  7 15:27:53 2020 ] 	Time consumption: [Data]07%, [Network]93%
+[ Wed Oct  7 15:27:53 2020 ] Eval epoch: 1
+[ Wed Oct  7 15:30:16 2020 ] 	Mean test loss of 865 batches: 2.5452022400894605.
+[ Wed Oct  7 15:30:16 2020 ] 	Top1: 25.07%
+[ Wed Oct  7 15:30:16 2020 ] 	Top5: 79.76%
+[ Wed Oct  7 15:30:16 2020 ] 	Top11: 100.00%
+[ Wed Oct  7 15:30:16 2020 ] Training epoch: 2
+[ Wed Oct  7 15:50:58 2020 ] 	Mean training loss: 1.8536.
+[ Wed Oct  7 15:50:58 2020 ] 	Time consumption: [Data]01%, [Network]98%
+[ Wed Oct  7 15:50:58 2020 ] Eval epoch: 2
+[ Wed Oct  7 15:53:21 2020 ] 	Mean test loss of 865 batches: 1.5960868100210421.
+[ Wed Oct  7 15:53:21 2020 ] 	Top1: 39.33%
+[ Wed Oct  7 15:53:21 2020 ] 	Top5: 91.70%
+[ Wed Oct  7 15:53:21 2020 ] 	Top11: 100.00%
+[ Wed Oct  7 17:25:34 2020 ] using warm up, epoch: 0
+[ Wed Oct  7 17:26:37 2020 ] using warm up, epoch: 0
+[ Wed Oct  7 17:28:46 2020 ] Load weights from ./runs/ntu_cv_p2agcn_joint-1-3444.pt.
+[ Wed Oct  7 17:28:46 2020 ] using warm up, epoch: 0
+[ Wed Oct  7 17:28:46 2020 ] Parameters:
+{'work_dir': './work_dir/ntu/xview/agcn_joint', 'model_saved_name': './runs/ntu_cv_p2agcn_joint', 'config': './config/nturgbd-cross-view/train_joint_p2.yaml', 'phase': 'train', 'save_score': False, 'seed': 1, 'log_interval': 100, 'save_interval': 2, 'eval_interval': 5, 'print_log': True, 'show_topk': [1, 5, 11], 'feeder': 'feeders.feeder.Feeder', 'num_worker': 0, 'train_feeder_args': {'data_path': './data/ntu/xview/train_data_joint.npy', 'label_path': './data/ntu/xview/train_label.pkl', 'debug': False, 'random_choose': False, 'random_shift': False, 'random_move': False, 'window_size': -1, 'normalization': False}, 'test_feeder_args': {'data_path': './data/ntu/xview/val_data_joint.npy', 'label_path': './data/ntu/xview/val_label.pkl'}, 'model': 'model.agcn.Model', 'model_args': {'num_class': 11, 'num_point': 25, 'num_person': 2, 'graph': 'graph.ntu_rgb_d.Graph', 'graph_args': {'labeling_mode': 'spatial', 'num_node': 50}}, 'weights': './runs/ntu_cv_p2agcn_joint-1-3444.pt', 'ignore_weights': [], 'base_lr': 0.1, 'step': [30, 40], 'device': [0], 'optimizer': 'SGD', 'nesterov': True, 'batch_size': 4, 'test_batch_size': 4, 'start_epoch': 2, 'num_epoch': 20, 'weight_decay': 0.0001, 'only_train_part': False, 'only_train_epoch': 0, 'warm_up_epoch': 0, 'printA': False}
+
+[ Wed Oct  7 17:28:46 2020 ] Training epoch: 3
+[ Wed Oct  7 17:47:32 2020 ] 	Mean training loss: 1.5347.
+[ Wed Oct  7 17:47:32 2020 ] 	Time consumption: [Data]00%, [Network]100%
+[ Wed Oct  7 17:47:32 2020 ] Eval epoch: 3
+[ Wed Oct  7 17:49:59 2020 ] 	Mean test loss of 865 batches: 1.0901983625626976.
+[ Wed Oct  7 17:49:59 2020 ] 	Top1: 62.12%
+[ Wed Oct  7 17:49:59 2020 ] 	Top5: 96.27%
+[ Wed Oct  7 17:49:59 2020 ] 	Top11: 100.00%
+[ Wed Oct  7 17:49:59 2020 ] Training epoch: 4
+[ Wed Oct  7 18:10:03 2020 ] 	Mean training loss: 1.2176.
+[ Wed Oct  7 18:10:03 2020 ] 	Time consumption: [Data]00%, [Network]100%
+[ Wed Oct  7 18:10:03 2020 ] Eval epoch: 4
+[ Wed Oct  7 18:12:37 2020 ] 	Mean test loss of 865 batches: 0.9281055287129617.
+[ Wed Oct  7 18:12:37 2020 ] 	Top1: 66.66%
+[ Wed Oct  7 18:12:37 2020 ] 	Top5: 97.05%
+[ Wed Oct  7 18:12:37 2020 ] 	Top11: 100.00%
+[ Wed Oct  7 18:12:37 2020 ] Training epoch: 5
+[ Wed Oct  7 18:33:06 2020 ] 	Mean training loss: 1.0441.
+[ Wed Oct  7 18:33:06 2020 ] 	Time consumption: [Data]00%, [Network]100%
+[ Wed Oct  7 18:33:06 2020 ] Eval epoch: 5
+[ Wed Oct  7 18:35:34 2020 ] 	Mean test loss of 865 batches: 0.6764331223173982.
+[ Wed Oct  7 18:35:34 2020 ] 	Top1: 77.53%
+[ Wed Oct  7 18:35:34 2020 ] 	Top5: 98.21%
+[ Wed Oct  7 18:35:34 2020 ] 	Top11: 100.00%
+[ Wed Oct  7 18:35:34 2020 ] Training epoch: 6
+[ Wed Oct  7 18:56:05 2020 ] 	Mean training loss: 0.9675.
+[ Wed Oct  7 18:56:05 2020 ] 	Time consumption: [Data]02%, [Network]98%
+[ Wed Oct  7 18:56:05 2020 ] Eval epoch: 6
+[ Wed Oct  7 18:58:22 2020 ] 	Mean test loss of 865 batches: 0.6108900929505081.
+[ Wed Oct  7 18:58:22 2020 ] 	Top1: 80.48%
+[ Wed Oct  7 18:58:22 2020 ] 	Top5: 98.53%
+[ Wed Oct  7 18:58:22 2020 ] 	Top11: 100.00%
+[ Wed Oct  7 18:58:22 2020 ] Training epoch: 7
+[ Wed Oct  7 19:19:34 2020 ] 	Mean training loss: 0.8778.
+[ Wed Oct  7 19:19:34 2020 ] 	Time consumption: [Data]01%, [Network]99%
+[ Wed Oct  7 19:19:34 2020 ] Eval epoch: 7
+[ Wed Oct  7 19:21:58 2020 ] 	Mean test loss of 865 batches: 0.6153021219428736.
+[ Wed Oct  7 19:21:58 2020 ] 	Top1: 79.55%
+[ Wed Oct  7 19:21:58 2020 ] 	Top5: 98.73%
+[ Wed Oct  7 19:21:58 2020 ] 	Top11: 100.00%
+[ Wed Oct  7 19:21:58 2020 ] Training epoch: 8
+[ Wed Oct  7 19:41:54 2020 ] 	Mean training loss: 0.8264.
+[ Wed Oct  7 19:41:54 2020 ] 	Time consumption: [Data]00%, [Network]100%
+[ Wed Oct  7 19:41:54 2020 ] Eval epoch: 8
+[ Wed Oct  7 19:44:17 2020 ] 	Mean test loss of 865 batches: 0.5255174419336623.
+[ Wed Oct  7 19:44:17 2020 ] 	Top1: 82.50%
+[ Wed Oct  7 19:44:17 2020 ] 	Top5: 98.90%
+[ Wed Oct  7 19:44:17 2020 ] 	Top11: 100.00%
+[ Wed Oct  7 19:44:17 2020 ] Training epoch: 9
+[ Wed Oct  7 20:04:35 2020 ] 	Mean training loss: 0.7963.
+[ Wed Oct  7 20:04:35 2020 ] 	Time consumption: [Data]01%, [Network]99%
+[ Wed Oct  7 20:04:35 2020 ] Eval epoch: 9
+[ Wed Oct  7 20:07:36 2020 ] 	Mean test loss of 865 batches: 0.4849847047315168.
+[ Wed Oct  7 20:07:36 2020 ] 	Top1: 84.41%
+[ Wed Oct  7 20:07:36 2020 ] 	Top5: 98.87%
+[ Wed Oct  7 20:07:36 2020 ] 	Top11: 100.00%
+[ Wed Oct  7 20:07:36 2020 ] Training epoch: 10
+[ Wed Oct  7 20:43:17 2020 ] 	Mean training loss: 0.7540.
+[ Wed Oct  7 20:43:17 2020 ] 	Time consumption: [Data]00%, [Network]100%
+[ Wed Oct  7 20:43:17 2020 ] Eval epoch: 10
+[ Wed Oct  7 20:47:23 2020 ] 	Mean test loss of 865 batches: 0.4448361326681956.
+[ Wed Oct  7 20:47:23 2020 ] 	Top1: 84.09%
+[ Wed Oct  7 20:47:23 2020 ] 	Top5: 99.28%
+[ Wed Oct  7 20:47:23 2020 ] 	Top11: 100.00%
+[ Wed Oct  7 20:47:23 2020 ] Training epoch: 11
+[ Wed Oct  7 21:25:33 2020 ] 	Mean training loss: 0.7190.
+[ Wed Oct  7 21:25:33 2020 ] 	Time consumption: [Data]00%, [Network]100%
+[ Wed Oct  7 21:25:33 2020 ] Eval epoch: 11
+[ Wed Oct  7 21:29:13 2020 ] 	Mean test loss of 865 batches: 0.5779494481036914.
+[ Wed Oct  7 21:29:13 2020 ] 	Top1: 80.80%
+[ Wed Oct  7 21:29:13 2020 ] 	Top5: 98.58%
+[ Wed Oct  7 21:29:13 2020 ] 	Top11: 100.00%
+[ Wed Oct  7 21:29:13 2020 ] Training epoch: 12
+[ Wed Oct  7 22:05:34 2020 ] 	Mean training loss: 0.6867.
+[ Wed Oct  7 22:05:34 2020 ] 	Time consumption: [Data]00%, [Network]100%
+[ Wed Oct  7 22:05:34 2020 ] Eval epoch: 12
+[ Wed Oct  7 22:08:02 2020 ] 	Mean test loss of 865 batches: 0.476041063032183.
+[ Wed Oct  7 22:08:02 2020 ] 	Top1: 85.02%
+[ Wed Oct  7 22:08:02 2020 ] 	Top5: 98.47%
+[ Wed Oct  7 22:08:02 2020 ] 	Top11: 100.00%
+[ Wed Oct  7 22:08:02 2020 ] Training epoch: 13
+[ Wed Oct  7 22:28:26 2020 ] 	Mean training loss: 0.6534.
+[ Wed Oct  7 22:28:26 2020 ] 	Time consumption: [Data]00%, [Network]100%
+[ Wed Oct  7 22:28:26 2020 ] Eval epoch: 13
+[ Wed Oct  7 22:30:53 2020 ] 	Mean test loss of 865 batches: 0.48184979375521786.
+[ Wed Oct  7 22:30:53 2020 ] 	Top1: 83.26%
+[ Wed Oct  7 22:30:53 2020 ] 	Top5: 99.16%
+[ Wed Oct  7 22:30:53 2020 ] 	Top11: 100.00%
+[ Wed Oct  7 22:30:53 2020 ] Training epoch: 14
+[ Wed Oct  7 22:54:32 2020 ] 	Mean training loss: 0.6443.
+[ Wed Oct  7 22:54:32 2020 ] 	Time consumption: [Data]00%, [Network]100%
+[ Wed Oct  7 22:54:32 2020 ] Eval epoch: 14
+[ Wed Oct  7 22:57:30 2020 ] 	Mean test loss of 865 batches: 0.4414500274225757.
+[ Wed Oct  7 22:57:30 2020 ] 	Top1: 84.30%
+[ Wed Oct  7 22:57:30 2020 ] 	Top5: 99.31%
+[ Wed Oct  7 22:57:30 2020 ] 	Top11: 100.00%
+[ Wed Oct  7 22:57:30 2020 ] Training epoch: 15
+[ Wed Oct  7 23:18:46 2020 ] 	Mean training loss: 0.6143.
+[ Wed Oct  7 23:18:46 2020 ] 	Time consumption: [Data]01%, [Network]99%
+[ Wed Oct  7 23:18:46 2020 ] Eval epoch: 15
+[ Wed Oct  7 23:21:14 2020 ] 	Mean test loss of 865 batches: 0.4799602429780199.
+[ Wed Oct  7 23:21:14 2020 ] 	Top1: 82.97%
+[ Wed Oct  7 23:21:14 2020 ] 	Top5: 99.33%
+[ Wed Oct  7 23:21:14 2020 ] 	Top11: 100.00%
+[ Wed Oct  7 23:21:14 2020 ] Training epoch: 16
+[ Wed Oct  7 23:41:51 2020 ] 	Mean training loss: 0.6003.
+[ Wed Oct  7 23:41:51 2020 ] 	Time consumption: [Data]00%, [Network]100%
+[ Wed Oct  7 23:41:51 2020 ] Eval epoch: 16
+[ Wed Oct  7 23:44:25 2020 ] 	Mean test loss of 865 batches: 0.4055534642205555.
+[ Wed Oct  7 23:44:25 2020 ] 	Top1: 87.02%
+[ Wed Oct  7 23:44:25 2020 ] 	Top5: 99.22%
+[ Wed Oct  7 23:44:25 2020 ] 	Top11: 100.00%
+[ Wed Oct  7 23:44:25 2020 ] Training epoch: 17
+[ Thu Oct  8 11:17:58 2020 ] Load weights from ./runs/ntu_cv_p2agcn_joint-15-24969.pt.
+[ Thu Oct  8 11:17:58 2020 ] using warm up, epoch: 0
+[ Thu Oct  8 11:17:58 2020 ] Parameters:
+{'work_dir': './work_dir/ntu/xview/agcn_joint', 'model_saved_name': './runs/ntu_cv_p2agcn_joint', 'config': './config/nturgbd-cross-view/train_joint_p2.yaml', 'phase': 'train', 'save_score': False, 'seed': 1, 'log_interval': 100, 'save_interval': 2, 'eval_interval': 5, 'print_log': True, 'show_topk': [1, 5, 11], 'feeder': 'feeders.feeder.Feeder', 'num_worker': 0, 'train_feeder_args': {'data_path': './data/ntu/xview/train_data_joint.npy', 'label_path': './data/ntu/xview/train_label.pkl', 'debug': False, 'random_choose': False, 'random_shift': False, 'random_move': False, 'window_size': -1, 'normalization': False}, 'test_feeder_args': {'data_path': './data/ntu/xview/val_data_joint.npy', 'label_path': './data/ntu/xview/val_label.pkl'}, 'model': 'model.agcn.Model', 'model_args': {'num_class': 11, 'num_point': 25, 'num_person': 2, 'graph': 'graph.ntu_rgb_d.Graph', 'graph_args': {'labeling_mode': 'spatial', 'num_node': 50}}, 'weights': './runs/ntu_cv_p2agcn_joint-15-24969.pt', 'ignore_weights': [], 'base_lr': 0.1, 'step': [30, 40], 'device': [0], 'optimizer': 'SGD', 'nesterov': True, 'batch_size': 4, 'test_batch_size': 4, 'start_epoch': 16, 'num_epoch': 50, 'weight_decay': 0.0001, 'only_train_part': False, 'only_train_epoch': 0, 'warm_up_epoch': 0, 'printA': False}
+
+[ Thu Oct  8 11:17:58 2020 ] Training epoch: 17
+[ Thu Oct  8 11:38:16 2020 ] 	Mean training loss: 0.5922.
+[ Thu Oct  8 11:38:16 2020 ] 	Time consumption: [Data]01%, [Network]99%
+[ Thu Oct  8 11:38:16 2020 ] Eval epoch: 17
+[ Thu Oct  8 11:40:51 2020 ] 	Mean test loss of 865 batches: 0.353731464049688.
+[ Thu Oct  8 11:40:51 2020 ] 	Top1: 87.91%
+[ Thu Oct  8 11:40:51 2020 ] 	Top5: 99.28%
+[ Thu Oct  8 11:40:51 2020 ] 	Top11: 100.00%
+[ Thu Oct  8 11:40:51 2020 ] Training epoch: 18
+[ Thu Oct  8 12:02:23 2020 ] 	Mean training loss: 0.5762.
+[ Thu Oct  8 12:02:23 2020 ] 	Time consumption: [Data]01%, [Network]99%
+[ Thu Oct  8 12:02:23 2020 ] Eval epoch: 18
+[ Thu Oct  8 12:05:02 2020 ] 	Mean test loss of 865 batches: 0.4713339825178297.
+[ Thu Oct  8 12:05:02 2020 ] 	Top1: 83.89%
+[ Thu Oct  8 12:05:02 2020 ] 	Top5: 99.13%
+[ Thu Oct  8 12:05:02 2020 ] 	Top11: 100.00%
+[ Thu Oct  8 12:05:02 2020 ] Training epoch: 19
+[ Thu Oct  8 12:25:59 2020 ] 	Mean training loss: 0.5396.
+[ Thu Oct  8 12:25:59 2020 ] 	Time consumption: [Data]00%, [Network]100%
+[ Thu Oct  8 12:25:59 2020 ] Eval epoch: 19
+[ Thu Oct  8 12:28:31 2020 ] 	Mean test loss of 865 batches: 0.3556353394476417.
+[ Thu Oct  8 12:28:31 2020 ] 	Top1: 87.85%
+[ Thu Oct  8 12:28:31 2020 ] 	Top5: 99.51%
+[ Thu Oct  8 12:28:31 2020 ] 	Top11: 100.00%
+[ Thu Oct  8 12:28:31 2020 ] Training epoch: 20
+[ Thu Oct  8 12:49:50 2020 ] 	Mean training loss: 0.5499.
+[ Thu Oct  8 12:49:50 2020 ] 	Time consumption: [Data]00%, [Network]100%
+[ Thu Oct  8 12:49:50 2020 ] Eval epoch: 20
+[ Thu Oct  8 12:52:26 2020 ] 	Mean test loss of 865 batches: 0.36635810946459824.
+[ Thu Oct  8 12:52:26 2020 ] 	Top1: 88.26%
+[ Thu Oct  8 12:52:26 2020 ] 	Top5: 99.25%
+[ Thu Oct  8 12:52:26 2020 ] 	Top11: 100.00%
+[ Thu Oct  8 12:52:26 2020 ] Training epoch: 21
+[ Thu Oct  8 13:13:08 2020 ] 	Mean training loss: 0.5362.
+[ Thu Oct  8 13:13:08 2020 ] 	Time consumption: [Data]00%, [Network]100%
+[ Thu Oct  8 13:13:08 2020 ] Eval epoch: 21
+[ Thu Oct  8 13:15:38 2020 ] 	Mean test loss of 865 batches: 0.2949745043274419.
+[ Thu Oct  8 13:15:38 2020 ] 	Top1: 90.28%
+[ Thu Oct  8 13:15:38 2020 ] 	Top5: 99.28%
+[ Thu Oct  8 13:15:38 2020 ] 	Top11: 100.00%
+[ Thu Oct  8 13:15:38 2020 ] Training epoch: 22
+[ Thu Oct  8 13:37:23 2020 ] 	Mean training loss: 0.5165.
+[ Thu Oct  8 13:37:23 2020 ] 	Time consumption: [Data]00%, [Network]100%
+[ Thu Oct  8 13:37:23 2020 ] Eval epoch: 22
+[ Thu Oct  8 13:40:16 2020 ] 	Mean test loss of 865 batches: 0.3185026381572958.
+[ Thu Oct  8 13:40:16 2020 ] 	Top1: 88.69%
+[ Thu Oct  8 13:40:16 2020 ] 	Top5: 99.51%
+[ Thu Oct  8 13:40:16 2020 ] 	Top11: 100.00%
+[ Thu Oct  8 13:40:16 2020 ] Training epoch: 23
+[ Thu Oct  8 14:03:53 2020 ] 	Mean training loss: 0.5171.
+[ Thu Oct  8 14:03:53 2020 ] 	Time consumption: [Data]01%, [Network]99%
+[ Thu Oct  8 14:03:53 2020 ] Eval epoch: 23
+[ Thu Oct  8 14:06:37 2020 ] 	Mean test loss of 865 batches: 0.3625148788319781.
+[ Thu Oct  8 14:06:37 2020 ] 	Top1: 88.49%
+[ Thu Oct  8 14:06:37 2020 ] 	Top5: 99.16%
+[ Thu Oct  8 14:06:37 2020 ] 	Top11: 100.00%
+[ Thu Oct  8 14:06:37 2020 ] Training epoch: 24
+[ Thu Oct  8 14:28:56 2020 ] 	Mean training loss: 0.4958.
+[ Thu Oct  8 14:28:56 2020 ] 	Time consumption: [Data]00%, [Network]100%
+[ Thu Oct  8 14:28:56 2020 ] Eval epoch: 24
+[ Thu Oct  8 14:31:39 2020 ] 	Mean test loss of 865 batches: 0.44428671801745734.
+[ Thu Oct  8 14:31:39 2020 ] 	Top1: 84.24%
+[ Thu Oct  8 14:31:39 2020 ] 	Top5: 99.16%
+[ Thu Oct  8 14:31:39 2020 ] 	Top11: 100.00%
+[ Thu Oct  8 14:31:39 2020 ] Training epoch: 25
+[ Thu Oct  8 14:53:36 2020 ] 	Mean training loss: 0.4928.
+[ Thu Oct  8 14:53:36 2020 ] 	Time consumption: [Data]01%, [Network]99%
+[ Thu Oct  8 14:53:36 2020 ] Eval epoch: 25
+[ Thu Oct  8 14:56:16 2020 ] 	Mean test loss of 865 batches: 0.30518231005861934.
+[ Thu Oct  8 14:56:16 2020 ] 	Top1: 89.88%
+[ Thu Oct  8 14:56:16 2020 ] 	Top5: 99.36%
+[ Thu Oct  8 14:56:16 2020 ] 	Top11: 100.00%
+[ Thu Oct  8 14:56:16 2020 ] Training epoch: 26
+[ Thu Oct  8 15:18:33 2020 ] 	Mean training loss: 0.4823.
+[ Thu Oct  8 15:18:33 2020 ] 	Time consumption: [Data]00%, [Network]99%
+[ Thu Oct  8 15:18:33 2020 ] Eval epoch: 26
+[ Thu Oct  8 15:21:14 2020 ] 	Mean test loss of 865 batches: 0.28998260990547614.
+[ Thu Oct  8 15:21:14 2020 ] 	Top1: 90.40%
+[ Thu Oct  8 15:21:14 2020 ] 	Top5: 99.45%
+[ Thu Oct  8 15:21:14 2020 ] 	Top11: 100.00%
+[ Thu Oct  8 15:21:14 2020 ] Training epoch: 27
+[ Thu Oct  8 15:43:36 2020 ] 	Mean training loss: 0.4797.
+[ Thu Oct  8 15:43:36 2020 ] 	Time consumption: [Data]00%, [Network]100%
+[ Thu Oct  8 15:43:36 2020 ] Eval epoch: 27
+[ Thu Oct  8 15:46:27 2020 ] 	Mean test loss of 865 batches: 0.33586871650978734.
+[ Thu Oct  8 15:46:27 2020 ] 	Top1: 88.43%
+[ Thu Oct  8 15:46:28 2020 ] 	Top5: 99.51%
+[ Thu Oct  8 15:46:28 2020 ] 	Top11: 100.00%
+[ Thu Oct  8 15:46:28 2020 ] Training epoch: 28
+[ Thu Oct  8 16:09:20 2020 ] 	Mean training loss: 0.4654.
+[ Thu Oct  8 16:09:20 2020 ] 	Time consumption: [Data]01%, [Network]99%
+[ Thu Oct  8 16:09:21 2020 ] Eval epoch: 28
+[ Thu Oct  8 16:12:00 2020 ] 	Mean test loss of 865 batches: 0.32406109575940245.
+[ Thu Oct  8 16:12:00 2020 ] 	Top1: 88.95%
+[ Thu Oct  8 16:12:00 2020 ] 	Top5: 99.60%
+[ Thu Oct  8 16:12:00 2020 ] 	Top11: 100.00%
+[ Thu Oct  8 16:12:00 2020 ] Training epoch: 29
+[ Thu Oct  8 16:34:04 2020 ] 	Mean training loss: 0.4629.
+[ Thu Oct  8 16:34:04 2020 ] 	Time consumption: [Data]01%, [Network]99%
+[ Thu Oct  8 16:34:04 2020 ] Eval epoch: 29
+[ Thu Oct  8 16:36:49 2020 ] 	Mean test loss of 865 batches: 0.44666880646921586.
+[ Thu Oct  8 16:36:49 2020 ] 	Top1: 85.08%
+[ Thu Oct  8 16:36:49 2020 ] 	Top5: 98.87%
+[ Thu Oct  8 16:36:49 2020 ] 	Top11: 100.00%
+[ Thu Oct  8 16:36:49 2020 ] Training epoch: 30
+[ Thu Oct  8 16:58:37 2020 ] 	Mean training loss: 0.4596.
+[ Thu Oct  8 16:58:37 2020 ] 	Time consumption: [Data]01%, [Network]98%
+[ Thu Oct  8 16:58:37 2020 ] Eval epoch: 30
+[ Thu Oct  8 17:01:14 2020 ] 	Mean test loss of 865 batches: 0.40086372010523175.
+[ Thu Oct  8 17:01:14 2020 ] 	Top1: 87.54%
+[ Thu Oct  8 17:01:15 2020 ] 	Top5: 98.96%
+[ Thu Oct  8 17:01:15 2020 ] 	Top11: 100.00%
+[ Thu Oct  8 17:01:15 2020 ] Training epoch: 31
+[ Thu Oct  8 17:22:08 2020 ] 	Mean training loss: 0.2745.
+[ Thu Oct  8 17:22:08 2020 ] 	Time consumption: [Data]00%, [Network]100%
+[ Thu Oct  8 17:22:08 2020 ] Eval epoch: 31
+[ Thu Oct  8 17:24:45 2020 ] 	Mean test loss of 865 batches: 0.1807740419776541.
+[ Thu Oct  8 17:24:45 2020 ] 	Top1: 94.01%
+[ Thu Oct  8 17:24:45 2020 ] 	Top5: 99.77%
+[ Thu Oct  8 17:24:45 2020 ] 	Top11: 100.00%
+[ Thu Oct  8 17:24:45 2020 ] Training epoch: 32
+[ Thu Oct  8 17:47:56 2020 ] 	Mean training loss: 0.2224.
+[ Thu Oct  8 17:47:56 2020 ] 	Time consumption: [Data]00%, [Network]100%
+[ Thu Oct  8 17:47:56 2020 ] Eval epoch: 32
+[ Thu Oct  8 17:50:28 2020 ] 	Mean test loss of 865 batches: 0.17623472143598873.
+[ Thu Oct  8 17:50:28 2020 ] 	Top1: 94.10%
+[ Thu Oct  8 17:50:28 2020 ] 	Top5: 99.83%
+[ Thu Oct  8 17:50:28 2020 ] 	Top11: 100.00%
+[ Thu Oct  8 17:50:28 2020 ] Training epoch: 33
+[ Thu Oct  8 18:11:12 2020 ] 	Mean training loss: 0.2051.
+[ Thu Oct  8 18:11:12 2020 ] 	Time consumption: [Data]00%, [Network]100%
+[ Thu Oct  8 18:11:12 2020 ] Eval epoch: 33
+[ Thu Oct  8 18:13:39 2020 ] 	Mean test loss of 865 batches: 0.1583055194271766.
+[ Thu Oct  8 18:13:39 2020 ] 	Top1: 94.56%
+[ Thu Oct  8 18:13:39 2020 ] 	Top5: 99.83%
+[ Thu Oct  8 18:13:40 2020 ] 	Top11: 100.00%
+[ Thu Oct  8 18:13:40 2020 ] Training epoch: 34
+[ Thu Oct  8 18:34:18 2020 ] 	Mean training loss: 0.1860.
+[ Thu Oct  8 18:34:18 2020 ] 	Time consumption: [Data]03%, [Network]97%
+[ Thu Oct  8 18:34:18 2020 ] Eval epoch: 34
+[ Thu Oct  8 18:36:46 2020 ] 	Mean test loss of 865 batches: 0.16817202872302442.
+[ Thu Oct  8 18:36:46 2020 ] 	Top1: 93.84%
+[ Thu Oct  8 18:36:46 2020 ] 	Top5: 99.83%
+[ Thu Oct  8 18:36:46 2020 ] 	Top11: 100.00%
+[ Thu Oct  8 18:36:46 2020 ] Training epoch: 35
+[ Thu Oct  8 18:56:56 2020 ] 	Mean training loss: 0.1799.
+[ Thu Oct  8 18:56:56 2020 ] 	Time consumption: [Data]00%, [Network]100%
+[ Thu Oct  8 18:56:56 2020 ] Eval epoch: 35
+[ Thu Oct  8 18:59:24 2020 ] 	Mean test loss of 865 batches: 0.14670765446110995.
+[ Thu Oct  8 18:59:24 2020 ] 	Top1: 95.00%
+[ Thu Oct  8 18:59:24 2020 ] 	Top5: 99.80%
+[ Thu Oct  8 18:59:24 2020 ] 	Top11: 100.00%
+[ Thu Oct  8 18:59:24 2020 ] Training epoch: 36
+[ Thu Oct  8 19:19:42 2020 ] 	Mean training loss: 0.1642.
+[ Thu Oct  8 19:19:42 2020 ] 	Time consumption: [Data]01%, [Network]99%
+[ Thu Oct  8 19:19:42 2020 ] Eval epoch: 36
+[ Thu Oct  8 19:22:11 2020 ] 	Mean test loss of 865 batches: 0.15207632605433072.
+[ Thu Oct  8 19:22:11 2020 ] 	Top1: 94.68%
+[ Thu Oct  8 19:22:11 2020 ] 	Top5: 99.83%
+[ Thu Oct  8 19:22:11 2020 ] 	Top11: 100.00%
+[ Thu Oct  8 19:22:11 2020 ] Training epoch: 37
+[ Thu Oct  8 19:42:21 2020 ] 	Mean training loss: 0.1560.
+[ Thu Oct  8 19:42:21 2020 ] 	Time consumption: [Data]00%, [Network]100%
+[ Thu Oct  8 19:42:21 2020 ] Eval epoch: 37
+[ Thu Oct  8 19:44:57 2020 ] 	Mean test loss of 865 batches: 0.1482029329466725.
+[ Thu Oct  8 19:44:57 2020 ] 	Top1: 95.23%
+[ Thu Oct  8 19:44:57 2020 ] 	Top5: 99.80%
+[ Thu Oct  8 19:44:57 2020 ] 	Top11: 100.00%
+[ Thu Oct  8 19:44:57 2020 ] Training epoch: 38
+[ Thu Oct  8 20:15:15 2020 ] 	Mean training loss: 0.1453.
+[ Thu Oct  8 20:15:15 2020 ] 	Time consumption: [Data]00%, [Network]99%
+[ Thu Oct  8 20:15:15 2020 ] Eval epoch: 38
+[ Thu Oct  8 20:20:34 2020 ] 	Mean test loss of 865 batches: 0.15966088477088033.
+[ Thu Oct  8 20:20:34 2020 ] 	Top1: 94.65%
+[ Thu Oct  8 20:20:34 2020 ] 	Top5: 99.83%
+[ Thu Oct  8 20:20:34 2020 ] 	Top11: 100.00%
+[ Thu Oct  8 20:20:34 2020 ] Training epoch: 39
+[ Thu Oct  8 21:02:34 2020 ] 	Mean training loss: 0.1369.
+[ Thu Oct  8 21:02:34 2020 ] 	Time consumption: [Data]00%, [Network]100%
+[ Thu Oct  8 21:02:34 2020 ] Eval epoch: 39
+[ Thu Oct  8 21:06:47 2020 ] 	Mean test loss of 865 batches: 0.1518674102272572.
+[ Thu Oct  8 21:06:47 2020 ] 	Top1: 94.71%
+[ Thu Oct  8 21:06:47 2020 ] 	Top5: 99.86%
+[ Thu Oct  8 21:06:47 2020 ] 	Top11: 100.00%
+[ Thu Oct  8 21:06:47 2020 ] Training epoch: 40
+[ Thu Oct  8 21:40:09 2020 ] 	Mean training loss: 0.1400.
+[ Thu Oct  8 21:40:09 2020 ] 	Time consumption: [Data]00%, [Network]100%
+[ Thu Oct  8 21:40:09 2020 ] Eval epoch: 40
+[ Thu Oct  8 21:44:20 2020 ] 	Mean test loss of 865 batches: 0.15008047596251242.
+[ Thu Oct  8 21:44:20 2020 ] 	Top1: 94.94%
+[ Thu Oct  8 21:44:20 2020 ] 	Top5: 99.83%
+[ Thu Oct  8 21:44:20 2020 ] 	Top11: 100.00%
+[ Thu Oct  8 21:44:20 2020 ] Training epoch: 41
+[ Thu Oct  8 22:21:27 2020 ] 	Mean training loss: 0.1109.
+[ Thu Oct  8 22:21:27 2020 ] 	Time consumption: [Data]00%, [Network]100%
+[ Thu Oct  8 22:21:27 2020 ] Eval epoch: 41
+[ Thu Oct  8 22:25:47 2020 ] 	Mean test loss of 865 batches: 0.15188511921450137.
+[ Thu Oct  8 22:25:47 2020 ] 	Top1: 94.77%
+[ Thu Oct  8 22:25:47 2020 ] 	Top5: 99.80%
+[ Thu Oct  8 22:25:47 2020 ] 	Top11: 100.00%
+[ Thu Oct  8 22:25:47 2020 ] Training epoch: 42
+[ Thu Oct  8 22:56:01 2020 ] 	Mean training loss: 0.0984.
+[ Thu Oct  8 22:56:01 2020 ] 	Time consumption: [Data]00%, [Network]99%
+[ Thu Oct  8 22:56:01 2020 ] Eval epoch: 42
+[ Thu Oct  8 22:58:30 2020 ] 	Mean test loss of 865 batches: 0.15228756592777062.
+[ Thu Oct  8 22:58:30 2020 ] 	Top1: 94.74%
+[ Thu Oct  8 22:58:30 2020 ] 	Top5: 99.80%
+[ Thu Oct  8 22:58:30 2020 ] 	Top11: 100.00%
+[ Thu Oct  8 22:58:30 2020 ] Training epoch: 43
+[ Thu Oct  8 23:18:54 2020 ] 	Mean training loss: 0.0967.
+[ Thu Oct  8 23:18:54 2020 ] 	Time consumption: [Data]00%, [Network]99%
+[ Thu Oct  8 23:18:54 2020 ] Eval epoch: 43
+[ Thu Oct  8 23:21:21 2020 ] 	Mean test loss of 865 batches: 0.14069350959741184.
+[ Thu Oct  8 23:21:21 2020 ] 	Top1: 95.14%
+[ Thu Oct  8 23:21:21 2020 ] 	Top5: 99.77%
+[ Thu Oct  8 23:21:21 2020 ] 	Top11: 100.00%
+[ Thu Oct  8 23:21:21 2020 ] Training epoch: 44
+[ Thu Oct  8 23:41:36 2020 ] 	Mean training loss: 0.0942.
+[ Thu Oct  8 23:41:36 2020 ] 	Time consumption: [Data]01%, [Network]99%
+[ Thu Oct  8 23:41:36 2020 ] Eval epoch: 44
+[ Thu Oct  8 23:44:07 2020 ] 	Mean test loss of 865 batches: 0.14987823303534042.
+[ Thu Oct  8 23:44:07 2020 ] 	Top1: 94.68%
+[ Thu Oct  8 23:44:07 2020 ] 	Top5: 99.83%
+[ Thu Oct  8 23:44:07 2020 ] 	Top11: 100.00%
+[ Thu Oct  8 23:44:07 2020 ] Training epoch: 45
+[ Fri Oct  9 00:04:30 2020 ] 	Mean training loss: 0.0932.
+[ Fri Oct  9 00:04:30 2020 ] 	Time consumption: [Data]00%, [Network]100%
+[ Fri Oct  9 00:04:30 2020 ] Eval epoch: 45
+[ Fri Oct  9 00:06:59 2020 ] 	Mean test loss of 865 batches: 0.1435274551760369.
+[ Fri Oct  9 00:06:59 2020 ] 	Top1: 95.11%
+[ Fri Oct  9 00:06:59 2020 ] 	Top5: 99.83%
+[ Fri Oct  9 00:06:59 2020 ] 	Top11: 100.00%
+[ Fri Oct  9 00:06:59 2020 ] Training epoch: 46
+[ Fri Oct  9 00:27:25 2020 ] 	Mean training loss: 0.0896.
+[ Fri Oct  9 00:27:25 2020 ] 	Time consumption: [Data]00%, [Network]100%
+[ Fri Oct  9 00:27:25 2020 ] Eval epoch: 46
+[ Fri Oct  9 00:29:55 2020 ] 	Mean test loss of 865 batches: 0.1426846350280091.
+[ Fri Oct  9 00:29:55 2020 ] 	Top1: 95.08%
+[ Fri Oct  9 00:29:55 2020 ] 	Top5: 99.83%
+[ Fri Oct  9 00:29:55 2020 ] 	Top11: 100.00%
+[ Fri Oct  9 00:29:55 2020 ] Training epoch: 47
+[ Fri Oct  9 11:02:18 2020 ] Load weights from ./runs/ntu_cv_p2agcn_joint-45-58548.pt.
+[ Fri Oct  9 11:02:18 2020 ] using warm up, epoch: 0
+[ Fri Oct  9 11:02:18 2020 ] Parameters:
+{'work_dir': './work_dir/ntu/xview/agcn_joint', 'model_saved_name': './runs/ntu_cv_p2agcn_joint', 'config': './config/nturgbd-cross-view/train_joint_p2.yaml', 'phase': 'train', 'save_score': False, 'seed': 1, 'log_interval': 100, 'save_interval': 2, 'eval_interval': 5, 'print_log': True, 'show_topk': [1, 5, 11], 'feeder': 'feeders.feeder.Feeder', 'num_worker': 0, 'train_feeder_args': {'data_path': './data/ntu/xview/train_data_joint.npy', 'label_path': './data/ntu/xview/train_label.pkl', 'debug': False, 'random_choose': False, 'random_shift': False, 'random_move': False, 'window_size': -1, 'normalization': False}, 'test_feeder_args': {'data_path': './data/ntu/xview/val_data_joint.npy', 'label_path': './data/ntu/xview/val_label.pkl'}, 'model': 'model.agcn.Model', 'model_args': {'num_class': 11, 'num_point': 25, 'num_person': 2, 'graph': 'graph.ntu_rgb_d.Graph', 'graph_args': {'labeling_mode': 'spatial', 'num_node': 50}}, 'weights': './runs/ntu_cv_p2agcn_joint-45-58548.pt', 'ignore_weights': [], 'base_lr': 0.1, 'step': [30, 40], 'device': [0], 'optimizer': 'SGD', 'nesterov': True, 'batch_size': 4, 'test_batch_size': 4, 'start_epoch': 46, 'num_epoch': 50, 'weight_decay': 0.0001, 'only_train_part': False, 'only_train_epoch': 0, 'warm_up_epoch': 0, 'printA': False}
+
+[ Fri Oct  9 11:02:18 2020 ] Training epoch: 47
+[ Fri Oct  9 11:21:44 2020 ] 	Mean training loss: 0.0956.
+[ Fri Oct  9 11:21:44 2020 ] 	Time consumption: [Data]01%, [Network]99%
+[ Fri Oct  9 11:21:44 2020 ] Eval epoch: 47
+[ Fri Oct  9 11:24:22 2020 ] 	Mean test loss of 865 batches: 0.1499818975813794.
+[ Fri Oct  9 11:24:22 2020 ] 	Top1: 94.77%
+[ Fri Oct  9 11:24:22 2020 ] 	Top5: 99.80%
+[ Fri Oct  9 11:24:22 2020 ] 	Top11: 100.00%
+[ Fri Oct  9 11:24:22 2020 ] Training epoch: 48
+[ Fri Oct  9 11:47:01 2020 ] 	Mean training loss: 0.0905.
+[ Fri Oct  9 11:47:01 2020 ] 	Time consumption: [Data]00%, [Network]100%
+[ Fri Oct  9 11:47:01 2020 ] Eval epoch: 48
+[ Fri Oct  9 11:49:45 2020 ] 	Mean test loss of 865 batches: 0.14432549174372936.
+[ Fri Oct  9 11:49:45 2020 ] 	Top1: 95.14%
+[ Fri Oct  9 11:49:45 2020 ] 	Top5: 99.83%
+[ Fri Oct  9 11:49:45 2020 ] 	Top11: 100.00%
+[ Fri Oct  9 11:49:45 2020 ] Training epoch: 49
+[ Fri Oct  9 12:12:46 2020 ] 	Mean training loss: 0.0866.
+[ Fri Oct  9 12:12:46 2020 ] 	Time consumption: [Data]01%, [Network]99%
+[ Fri Oct  9 12:12:46 2020 ] Eval epoch: 49
+[ Fri Oct  9 12:15:48 2020 ] 	Mean test loss of 865 batches: 0.15528587648897169.
+[ Fri Oct  9 12:15:48 2020 ] 	Top1: 94.97%
+[ Fri Oct  9 12:15:48 2020 ] 	Top5: 99.83%
+[ Fri Oct  9 12:15:48 2020 ] 	Top11: 100.00%
+[ Fri Oct  9 12:15:48 2020 ] Training epoch: 50
+[ Fri Oct  9 12:39:03 2020 ] 	Mean training loss: 0.0833.
+[ Fri Oct  9 12:39:03 2020 ] 	Time consumption: [Data]01%, [Network]99%
+[ Fri Oct  9 12:39:03 2020 ] Eval epoch: 50
+[ Fri Oct  9 12:41:54 2020 ] 	Mean test loss of 865 batches: 0.1489587441436457.
+[ Fri Oct  9 12:41:54 2020 ] 	Top1: 94.82%
+[ Fri Oct  9 12:41:54 2020 ] 	Top5: 99.86%
+[ Fri Oct  9 12:41:54 2020 ] 	Top11: 100.00%
+[ Fri Oct  9 12:45:04 2020 ] Load weights from ./runs/ntu_cv_p2agcn_joint-45-58548.pt.
+[ Fri Oct  9 12:45:04 2020 ] using warm up, epoch: 0
+[ Fri Oct  9 13:58:14 2020 ] Load weights from ./runs/ntu_cv_p2agcn_joint-45-58548.pt.
+[ Fri Oct  9 13:58:14 2020 ] using warm up, epoch: 0
+[ Fri Oct  9 14:08:19 2020 ] Load weights from ./runs/ntu_cv_p2agcn_joint-45-58548.pt.
+[ Fri Oct  9 14:08:19 2020 ] using warm up, epoch: 0
+[ Fri Oct  9 14:08:50 2020 ] Load weights from ./runs/ntu_cv_p2agcn_joint-45-58548.pt.
+[ Fri Oct  9 14:08:50 2020 ] using warm up, epoch: 0
+[ Fri Oct  9 14:09:09 2020 ] Load weights from ./runs/ntu_cv_p2agcn_joint-45-58548.pt.
+[ Fri Oct  9 14:09:09 2020 ] using warm up, epoch: 0
+[ Fri Oct  9 14:13:40 2020 ] Load weights from ./runs/ntu_cv_p2agcn_joint-45-58548.pt.
+[ Fri Oct  9 14:13:40 2020 ] using warm up, epoch: 0
+[ Fri Oct  9 14:32:02 2020 ] Load weights from ./runs/ntu_cv_p2agcn_joint-45-58548.pt.
+[ Fri Oct  9 14:32:02 2020 ] using warm up, epoch: 0
+[ Fri Oct  9 14:32:25 2020 ] Load weights from ./runs/ntu_cv_p2agcn_joint-45-58548.pt.
+[ Fri Oct  9 14:32:25 2020 ] using warm up, epoch: 0
+[ Fri Oct  9 14:32:53 2020 ] Load weights from ./runs/ntu_cv_p2agcn_joint-45-58548.pt.
+[ Fri Oct  9 14:32:53 2020 ] using warm up, epoch: 0
+[ Fri Oct  9 14:53:12 2020 ] Load weights from ./runs/ntu_cv_p2agcn_joint-45-58548.pt.
+[ Fri Oct  9 14:53:12 2020 ] using warm up, epoch: 0
+[ Fri Oct  9 14:53:45 2020 ] Load weights from ./runs/ntu_cv_p2agcn_joint-45-58548.pt.
+[ Fri Oct  9 14:53:45 2020 ] using warm up, epoch: 0
+[ Fri Oct  9 14:54:19 2020 ] Load weights from ./runs/ntu_cv_p2agcn_joint-45-58548.pt.
+[ Fri Oct  9 14:54:19 2020 ] using warm up, epoch: 0

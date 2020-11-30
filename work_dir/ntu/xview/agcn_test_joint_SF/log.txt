@@ -1,0 +1,2 @@
+[ Wed Oct 14 18:08:37 2020 ] Load weights from ./runs/ntu_cv_agcn_joint-49-29400.pt.
+[ Wed Oct 14 18:08:37 2020 ] using warm up, epoch: 0
